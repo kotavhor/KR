@@ -1,0 +1,10 @@
+Ivanov I.A..;2;7.5
+Ovsynikov K.O.;1;10
+Tabolich V.A.;1;8
+Minchyk K.V.;1;8
+Mirin A.D.;3;8.5
+Saveliev A.D.;3;9
+Beluga I.A.;3;8
+Avramchik M.A.;2;6.9
+Ignatenko K.O.;4;10
+Kolesnik D.S.;4;9

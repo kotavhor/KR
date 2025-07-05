@@ -17,3 +17,6 @@ int32_t FindBySurname(const Student* students, int32_t size, const char* surname
 void SortByGroupAndName(Student* students, int32_t size);
 
 void LoadStudentsFromFile(const char* filename, Student* students, int32_t size);
+
+void PrintAverageByGroup(const Student* students, int32_t size);
+    

@@ -53,7 +53,9 @@ int main() {
                 SortByGroupAndName(students, size);    // Сортировка по группе и фамилии
                 PrintStudents(students, size);         // Вывод результата
                 break;
-            case 4: // Не сделал
+            case 4:
+                PrintAverageByGroup(students, size); // Вывод ср.оц. по груам
+                break;
                 break;
             case 0:
                 std::cout << "Cancel.\n";

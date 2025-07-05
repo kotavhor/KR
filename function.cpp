@@ -83,3 +83,24 @@ int32_t FindBySurname(const Student* students, int32_t size, const char* surname
     }
     return -1;
 }
+
+void PrintAverageByGroup(const Student* students, int32_t size) {
+        const int32_t MAX_GROUPS = 100;
+        double total[MAX_GROUPS] = { 0 }; // массив сумм оценок
+        int32_t count[MAX_GROUPS] = { 0 }; // массив студентов в каждой группе
+
+        for (int32_t i{}; i < size; ++i) {
+            int32_t g = students[i].group;
+            if (g >= 0 && g < MAX_GROUPS) {
+                total[g] += students[i].grade;
+                count[g]++;
+            }
+        }
+
+        for (int32_t g{}; g < MAX_GROUPS; ++g) {
+            if (count[g] > 0) {
+                std::cout << "Group " << g << ": average grade = "
+                    << total[g] / count[g] << "\n";
+            }
+        }
+}
